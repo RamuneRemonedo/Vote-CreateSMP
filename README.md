@@ -11,3 +11,6 @@ Waterfall上で動く、投票プラグインです
 ## コマンド
 - /vote <プレイヤー名> - プレイヤーに投票します。
 - /votetop - 現在の投票ランキングを表示します。
+
+## ダウンロード
+[リリース](https://github.com/RamuneRemonedo/Vote-CreateSMP/releases/tag/2022.1207.1)からjarファイルをダウンロードしてください
