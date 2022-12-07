@@ -1,0 +1,4 @@
+name: VotePlugin
+version: '${project.version}'
+main: tokyo.ramune.vote.VotePlugin
+description: VotePlugin players
