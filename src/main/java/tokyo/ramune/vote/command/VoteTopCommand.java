@@ -23,7 +23,7 @@ public class VoteTopCommand extends Command {
 
         StringBuilder message = new StringBuilder(ChatColor.WHITE + "[" + ChatColor.GREEN + "投票" + ChatColor.AQUA + "ランキング" + ChatColor.WHITE + "]");
 
-        Comparator<Integer> comparator = Integer::compareTo;
+        Comparator<Integer> comparator = Comparator.reverseOrder();
         Map<Integer, UUID> map = new TreeMap<>(comparator);
 
         VoteHandler.getVotes().forEach((targetUniqueId, voterUniqueIds) -> map.put(voterUniqueIds.size(), targetUniqueId));
