@@ -13,4 +13,4 @@ Waterfall上で動く、投票プラグインです
 - /votetop - 現在の投票ランキングを表示します。
 
 ## ダウンロード
-[リリース](https://github.com/RamuneRemonedo/Vote-CreateSMP/releases/tag/2022.1207.1)からjarファイルをダウンロードしてください
+[リリース](https://github.com/RamuneRemonedo/Vote-CreateSMP/releases)からjarファイルをダウンロードしてください
