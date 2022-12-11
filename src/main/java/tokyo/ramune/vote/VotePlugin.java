@@ -8,6 +8,7 @@ import tokyo.ramune.vote.vote.VoteHandler;
 
 public final class VotePlugin extends Plugin {
     private static VotePlugin instance;
+    private static Scheduler scheduler;
 
     @Override
     public void onEnable() {
@@ -21,11 +22,14 @@ public final class VotePlugin extends Plugin {
 
     @Override
     public void onDisable() {
+        scheduler.stop();
+        scheduler = null;
+
         getLogger().info("The plugin has been disabled.");
     }
 
     public void startAutoResetSchedule() {
-        Scheduler scheduler = new Scheduler();
+        scheduler = new Scheduler();
 
         scheduler.schedule("0 0 * * *", VoteHandler::resetVote);
         scheduler.start();
